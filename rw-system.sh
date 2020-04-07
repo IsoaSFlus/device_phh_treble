@@ -86,7 +86,7 @@ changeKeylayout() {
         -e xiaomi/polaris -e xiaomi/sirius -e xiaomi/dipper \
         -e xiaomi/wayne -e xiaomi/jasmine -e xiaomi/jasmine_sprout \
         -e xiaomi/platina -e iaomi/perseus -e xiaomi/ysl -e Redmi/begonia\
-        -e xiaomi/nitrogen -e xiaomi/daisy -e xiaomi/sakura \
+        -e xiaomi/nitrogen -e xiaomi/daisy -e xiaomi/sakura -e xiaomi/andromeda \
         -e xiaomi/whyred -e xiaomi/tulip -e xiaomi/onc; then
         if [ ! -f /mnt/phh/keylayout/uinput-goodix.kl ]; then
           cp /system/phh/empty /mnt/phh/keylayout/uinput-goodix.kl
@@ -127,6 +127,8 @@ changeKeylayout() {
     if getprop ro.vendor.build.fingerprint |grep -iq -E -e '^Lenovo/' && [ -f /sys/devices/virtual/touch/tp_dev/gesture_on ];then
         cp /system/phh/lenovo-synaptics_dsx.kl /mnt/phh/keylayout/synaptics_dsx.kl
         chmod 0644 /mnt/phh/keylayout/synaptics_dsx.kl
+        cp /system/phh/lenovo-synaptics_dsx.kl /mnt/phh/keylayout/fts_ts.kl
+        chmod 0644 /mnt/phh/keylayout/fts_ts.kl
         changed=true
     fi
 
@@ -162,7 +164,7 @@ mount -o remount,ro / || true
 
 for part in /dev/block/bootdevice/by-name/oppodycnvbk  /dev/block/platform/bootdevice/by-name/nvdata;do
     if [ -b "$part" ];then
-        oppoName="$(grep -aohE '(RMX|CPH)[0-9]{4}' "$part")"
+        oppoName="$(grep -aohE '(RMX|CPH)[0-9]{4}' "$part" |head -n 1)"
         if [ -n "$oppoName" ];then
             setprop ro.build.overlay.deviceid "$oppoName"
         fi
@@ -215,6 +217,12 @@ if getprop ro.vendor.build.fingerprint | grep -iq \
     setprop persist.sys.qcom-brightness -1
 fi
 
+# Lenovo Z5s brightness flickers without this setting
+if getprop ro.vendor.build.fingerprint | grep -iq \
+    -e Lenovo/jd2019; then
+    setprop persist.sys.qcom-brightness -1
+fi
+
 if getprop ro.vendor.build.fingerprint | grep -qi oneplus/oneplus6/oneplus6; then
     resize2fs /dev/block/platform/soc/1d84000.ufshc/by-name/userdata
 fi
@@ -248,7 +256,7 @@ if getprop ro.vendor.product.device |grep -iq -e RMX1801 -e RMX1803 -e RMX1807;t
     setprop persist.sys.qcom-brightness "$(cat /sys/class/leds/lcd-backlight/max_brightness)"
 fi
 
-if getprop ro.build.overlay.deviceid |grep -q -e CPH1859 -e CPH1861;then	
+if getprop ro.build.overlay.deviceid |grep -q -e CPH1859 -e CPH1861 -e RMX1811;then	
     setprop persist.sys.qcom-brightness "$(cat /sys/class/leds/lcd-backlight/max_brightness)"
 fi
 
@@ -259,14 +267,22 @@ if getprop ro.vendor.build.fingerprint | grep -iq \
     -e iaomi/equuleus/equuleus -e motorola/nora -e xiaomi/nitrogen \
     -e motorola/hannah -e motorola/james -e motorola/pettyl -e iaomi/cepheus \
     -e iaomi/grus -e xiaomi/cereus -e iaomi/raphael -e iaomi/davinci \
-    -e iaomi/ginkgo -e iaomi/laurel_sprout;then
+    -e iaomi/ginkgo -e iaomi/laurel_sprout -e xiaomi/andromeda; then
     mount -o bind /mnt/phh/empty_dir /vendor/lib64/soundfx
     mount -o bind /mnt/phh/empty_dir /vendor/lib/soundfx
     setprop  ro.audio.ignore_effects true
 fi
 
+if getprop ro.build.fingerprint | grep -iq \
+    -e motorola/channel; then
+    mount -o bind /mnt/phh/empty_dir /vendor/lib64/soundfx
+    mount -o bind /mnt/phh/empty_dir /vendor/lib/soundfx
+    setprop ro.audio.ignore_effects true
+fi
+
 if [ "$(getprop ro.vendor.product.manufacturer)" = "motorola" ] || [ "$(getprop ro.product.vendor.manufacturer)" = "motorola" ]; then
     if getprop ro.vendor.product.device | grep -q -e nora -e ali -e hannah -e evert -e jeter -e deen -e james -e pettyl -e jater; then
+        setprop  ro.audio.ignore_effects true
         if [ "$vndk" -ge 28 ]; then
             f="/vendor/lib/libeffects.so"
             # shellcheck disable=SC2010
@@ -311,7 +327,8 @@ for f in /vendor/lib/mtk-ril.so /vendor/lib64/mtk-ril.so /vendor/lib/libmtk-ril.
     setprop persist.sys.radio.ussd.fix true
 done
 
-if getprop ro.vendor.build.fingerprint | grep -iq -e iaomi/cactus -e iaomi/cereus; then
+if getprop ro.vendor.build.fingerprint | grep -iq -e iaomi/cactus -e iaomi/cereus \
+    -e Redmi/begonia; then
     setprop debug.stagefright.omx_default_rank.sw-audio 1
     setprop debug.stagefright.omx_default_rank 0
 fi
@@ -447,9 +464,8 @@ fi
 if getprop ro.vendor.build.fingerprint | grep -qiE '^samsung/' && [ "$vndk" -ge 28 ];then
 	setprop persist.sys.phh.samsung_fingerprint 0
 	#obviously broken perms
-	if [ "$(stat -c '%A' /sys/class/sec/tsp/ear_detect_enable)" == "-rw-rw-r--" ] &&
-		[ "$(stat -c '%U' /sys/class/sec/tsp/ear_detect_enable)" == "root" ] &&
-		[ "$(stat -c '%G' /sys/class/sec/tsp/ear_detect_enable)" == "root" ];then
+	if [ "$(stat -c '%U' /sys/class/sec/tsp/cmd)" == "root" ] &&
+		[ "$(stat -c '%G' /sys/class/sec/tsp/cmd)" == "root" ];then
 
 		chcon u:object_r:sysfs_ss_writable:s0 /sys/class/sec/tsp/ear_detect_enable
 		chown system /sys/class/sec/tsp/ear_detect_enable
@@ -459,7 +475,6 @@ if getprop ro.vendor.build.fingerprint | grep -qiE '^samsung/' && [ "$vndk" -ge 
 
 		chown system /sys/class/power_supply/battery/wc_tx_en
 		chcon u:object_r:sysfs_app_writable:s0 /sys/class/power_supply/battery/wc_tx_en
-
 	fi
 
 	if [ "$(stat -c '%U' /sys/class/sec/tsp/input/enabled)" == "root" ] &&
@@ -564,13 +579,6 @@ if [ -c /dev/dsm ];then
     fi
 fi
 
-#Try to detect DT2W
-for ev in $(cd /sys/class/input;echo event*);do
-	if [ -f "/sys/class/input/$ev/device/device/gesture_mask" ];then
-		setprop persist.sys.phh.dt2w_evnode /dev/input/$ev
-	fi
-done
-
 has_hostapd=false
 for i in odm oem vendor product;do
     if grep -qF android.hardware.wifi.hostapd /$i/etc/vintf/manifest.xml;then
@@ -638,6 +646,12 @@ if getprop ro.build.overlay.deviceid |grep -qE '^RMX';then
     fi
 fi
 
-if [ "$vndk" -le 28 ] && getprop ro.hardware |grep -q -e mt6761 -e mt6763;then
+if [ "$vndk" -le 28 ] && getprop ro.hardware |grep -q -e mt6761 -e mt6763 -e mt6765 -e mt6785;then
     setprop debug.stagefright.ccodec 0
+fi
+
+if getprop ro.omc.build.version |grep -qE .;then
+	for f in $(find /odm -name \*.apk);do
+		mount /system/phh/empty $f
+	done
 fi

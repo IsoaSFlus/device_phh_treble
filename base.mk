@@ -56,6 +56,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	device/phh/treble/rw-system.sh:system/bin/rw-system.sh \
+	device/phh/treble/phh-on-data.sh:system/bin/phh-on-data.sh \
+	device/phh/treble/phh-prop-handler.sh:system/bin/phh-prop-handler.sh \
 	device/phh/treble/fixSPL/getSPL.arm:system/bin/getSPL
 
 PRODUCT_COPY_FILES += \
@@ -132,7 +134,8 @@ PRODUCT_PACKAGES += \
 
 # Helper to debug Xiaomi motorized camera
 PRODUCT_PACKAGES += \
-	xiaomi-motor
+	xiaomi-motor \
+	oneplus-motor
 
 PRODUCT_PACKAGES += \
 	Stk
@@ -164,3 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.biometrics.fingerprint@2.1-service.oppo.compat \
 
+
+PRODUCT_PACKAGES += \
+	vr_hwc
