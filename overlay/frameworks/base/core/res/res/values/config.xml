@@ -34,4 +34,8 @@
 	<dimen name="config_buttonCornerRadius">4.0dip</dimen>
 
 	<bool name="config_cellBroadcastAppLinks">true</bool>
+
+	<!-- Control whether Night display is available. This should only be enabled
+	on devices with HWC 2 color transform support. -->
+	<bool name="config_nightDisplayAvailable">false</bool>
 </resources>

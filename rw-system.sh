@@ -655,3 +655,9 @@ if getprop ro.omc.build.version |grep -qE .;then
 		mount /system/phh/empty $f
 	done
 fi
+
+# Huawei Victoria
+if [ -c /dev/nxp_smartpa_dev ];then
+    # fix speaker
+    chmod 0660 /dev/nxp_smartpa_dev
+    chown media media /dev/nxp_smartpa_dev

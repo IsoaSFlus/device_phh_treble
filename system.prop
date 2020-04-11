@@ -7,3 +7,17 @@ persist.sys.overlay.nightmode=true
 #Disable debugging strict mode toasts
 persist.sys.strictmode.disable=true
 persist.sys.phh.mainkeys=0
+
+#Graphics
+debug.egl.hw=1
+#debug.gralloc.gfx_ubwc_disable=0
+#debug.sf.enable_hwc_vds=1
+debug.sf.hw=1
+debug.sf.latch_unsignaled=1
+
+#Audio
+ro.config.media_vol_steps=51
+ro.config.vc_call_vol_steps=11
+
+#VTR
+odm.thp.service_enable=0
