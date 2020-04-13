@@ -36,7 +36,7 @@ GAPPS_REMOVE_PRODUCT_PACKAGES := \
 	talkback \
 	ConnMetrics \
 	TipsPrebuilt \
-	PixelSetupWizard
+	PixelSetupWizard \
 	WebViewGoogle \
     	WallpaperPickerGoogleRelease \
 	GooglePermissionControllerPrebuilt \
