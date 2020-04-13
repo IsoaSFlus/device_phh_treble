@@ -4,6 +4,10 @@
 
 setprop ctl.start media.swcodec
 
+if getprop ro.hw.oemName | grep -q  -e '^VTR-';then
+       	setprop odm.thp.service_enable 0
+fi
+
 for i in wpa p2p;do
 	if [ ! -f /data/misc/wifi/${i}_supplicant.conf ];then
 		cp /vendor/etc/wifi/wpa_supplicant.conf /data/misc/wifi/${i}_supplicant.conf
