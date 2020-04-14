@@ -8,6 +8,9 @@ persist.sys.overlay.nightmode=true
 persist.sys.strictmode.disable=true
 persist.sys.phh.mainkeys=0
 
+fw.max_users=10
+persist.sys.max_profiles=10
+
 #Graphics
 debug.egl.hw=1
 #debug.gralloc.gfx_ubwc_disable=0
@@ -19,5 +22,3 @@ debug.sf.latch_unsignaled=1
 ro.config.media_vol_steps=51
 ro.config.vc_call_vol_steps=11
 
-#VTR
-odm.thp.service_enable=0

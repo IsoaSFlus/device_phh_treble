@@ -662,3 +662,9 @@ if [ -c /dev/nxp_smartpa_dev ];then
     chmod 0660 /dev/nxp_smartpa_dev
     chown media:media /dev/nxp_smartpa_dev
 fi
+
+if getprop ro.vendor.build.fingerprint |grep -qiE \
+        -e Nokia/Plate2 \
+        -e razer/cheryl ; then
+    setprop media.settings.xml "/vendor/etc/media_profiles_vendor.xml"
+fi

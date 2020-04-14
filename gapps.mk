@@ -26,35 +26,7 @@ endif
 #Pixel Experience gapps
 ifneq ($(wildcard vendor/gapps),)
 IS_PHONE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
 $(call inherit-product,vendor/gapps/config.mk)
-
-GAPPS_REMOVE_PRODUCT_PACKAGES := \
-	GoogleDocumentsUIPrebuilt \
-	CalculatorGooglePrebuilt \
-	PrebuiltDeskClockGoogle \
-	talkback \
-	ConnMetrics \
-	TipsPrebuilt \
-	PixelSetupWizard \
-	WebViewGoogle \
-    	WallpaperPickerGoogleRelease \
-	GooglePermissionControllerPrebuilt \
-	GoogleContacts \
-	Photos \
-	CalendarGooglePrebuilt \
-	Chrome \
-	GoogleContacts \
-	GoogleContactsSyncAdapter \
-	GoogleTTS \
-	LatinIMEGooglePrebuilt \
-	LocationHistoryPrebuilt \
-	MarkupGoogle \
-	SoundPickerPrebuilt \
-
-
-PRODUCT_PACKAGES := $(filter-out $(GAPPS_REMOVE_PRODUCT_PACKAGES),$(PRODUCT_PACKAGES))
-
 PRODUCT_PACKAGES += \
        phh-overrides \
 	   com.simplemobiletools.gallery.pro \
