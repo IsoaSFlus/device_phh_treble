@@ -1,24 +1,47 @@
 ro.adb.secure=0
-#Some devices have sdcardfs kernel panicing on 8.0
-#Disable for everyone for the moment
+# Some devices have sdcardfs kernel panicing on 8.0
+# Disable for everyone for the moment
 ro.sys.sdcardfs=0
 persist.sys.overlay.nightmode=true
 
-#Disable debugging strict mode toasts
+# Disable debugging strict mode toasts
 persist.sys.strictmode.disable=true
 persist.sys.phh.mainkeys=0
 
 fw.max_users=10
 persist.sys.max_profiles=10
 
-#Graphics
+# Graphics
 debug.egl.hw=1
 #debug.gralloc.gfx_ubwc_disable=0
 #debug.sf.enable_hwc_vds=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 
-#Audio
+# Audio
 ro.config.media_vol_steps=51
-ro.config.vc_call_vol_steps=11
+ro.config.vc_call_vol_steps=14
 
+# VTR-AL00
+odm.rild.libargs=-m modem0
+odm.rild.libargs1=-m modem1
+odm.rild.libpath=/vendor/lib64/libbalong-ril.so
+odm.rild.libpath1=/vendor/lib64/libbalong-ril-1.so
+ro.telephony.default_network=9
+ro.config.dsds_mode=cdma_gsm
+ro.odm.config.hw_dsda=true
+ro.odm.multi.rild=false
+persist.odm.dsds.enabled=true
+odm.rild.rild1_ready_to_start=false
+persist.odm.cdma.temp=false
+ro.odm.config.hw_ipv6_support=true
+ro.cdma.home.operator.numeric=46003
+ro.config.full_network_support=true
+ro.odm.config.def_commril=HISI_CGUL_MODE
+ro.config.hisi_cdma_supported=true
+ro.odm.config.modem_number=2
+ro.odm.config.client_number=5
+ro.odm.config.is_start_commril=true
+persist.radio.multisim.config=dsda
+ro.odm.pwroff_card_if_tray_out=true
+persist.radio.modem.cap=09B9E
