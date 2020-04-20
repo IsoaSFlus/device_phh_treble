@@ -19,7 +19,7 @@ debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 
 # Audio
-ro.config.media_vol_steps=51
+ro.config.media_vol_steps=33
 ro.config.vc_call_vol_steps=14
 
 # VTR-AL00
