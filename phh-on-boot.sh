@@ -45,9 +45,10 @@ getprop | \
 # VTR
 if getprop ro.hw.oemName | grep -q  -e '^VTR-';then
     printf '1' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
-    printf '1' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
     printf '90' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+    printf '50:999000:75:1402000:90:1709000:95' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
     printf '0' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down
+
+    printf '1' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
     printf '0' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/fast_ramp_down
-    printf '50:999000:85:1402000:90:1709000:95' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
 fi
