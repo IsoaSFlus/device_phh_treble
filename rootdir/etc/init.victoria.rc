@@ -42,3 +42,7 @@ on property:init.svc.wait_sec=stopped
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy 1
     write /sys/devices/system/cpu/cpu4/cpufreq/interactive/fast_ramp_down 0
 
+    exec - root -- /system/bin/set_airplane_mode.sh off
+
+on property:sys.powerctl=*
+    exec - root -- /system/bin/set_airplane_mode.sh on
