@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config hashvalue="0da9b48f978ee72f4825735866883b8f">
+  <dict>
+    <!-- AR000AM0DV huangke 00403432 2018-06-14 18:50:20.0 -->
+    <bool key="hw_hide_lte">true</bool>
+    <!-- AR000AM09K zhanglifang WX474822 2018-06-19 17:38:28.0 -->
+    <bool key="hw_stkTitleSim">true</bool>
+    <!-- AR000AORG8 xiaqingsong WX554871 2018-11-07 12:04:16.0 -->
+    <bool key="support_vn_ecc">true</bool>
+  </dict>
+</config>

@@ -4,10 +4,6 @@
 
 setprop ctl.start media.swcodec
 
-if getprop ro.hw.oemName | grep -q  -e '^VTR-';then
-       	setprop odm.thp.service_enable 0
-fi
-
 for i in wpa p2p;do
 	if [ ! -f /data/misc/wifi/${i}_supplicant.conf ];then
 		cp /vendor/etc/wifi/wpa_supplicant.conf /data/misc/wifi/${i}_supplicant.conf
@@ -43,12 +39,12 @@ getprop | \
     done
 
 # VTR
-if getprop ro.hw.oemName | grep -q  -e '^VTR-';then
-    printf '1' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
-    printf '90' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
-    printf '50:999000:75:1402000:90:1709000:95' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
-    printf '0' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down
+#if getprop ro.hw.oemName | grep -q  -e '^VTR-';then
+#    printf '1' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
+#    printf '90' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+#    printf '50:999000:75:1402000:90:1709000:95' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/target_loads
+#    printf '0' > /sys/devices/system/cpu/cpu0/cpufreq/interactive/fast_ramp_down
 
-    printf '1' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
-    printf '0' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/fast_ramp_down
-fi
+#    printf '1' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/io_is_busy
+#    printf '0' > /sys/devices/system/cpu/cpu4/cpufreq/interactive/fast_ramp_down
+#fi

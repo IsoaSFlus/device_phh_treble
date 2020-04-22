@@ -1,0 +1,18 @@
+#  AR000A6OAL youwenbin WX405429 2018-08-09 16:29:44.0 
+ro.config.alarm_alert=Aegean_Sea.ogg
+#  存量参数统一上线 sukun 00398675 2018-08-15 11:01:27.0 
+ro.config.hw_ecclist_nocard=+120,+122
+#  DTS2017041803335 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.hw_ecclist_withcard=+112
+#  DTS2017041803335 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.hw_globalEcc=false
+#  DTS2017122704341 gaoguangping WX501293 2018-07-04 16:06:27.0 
+ro.config.hw_nlp=com.huawei.lbs
+#  AR000909VO gaoguangping WX501293 2018-07-04 16:06:27.0 
+ro.config.hw_updateCotaPara=true
+#  存量参数统一上线 gaoguangping WX501293 2018-07-04 16:06:27.0 
+ro.config.hw_vassistant_honor=true
+#  存量参数统一上线 gaoguangping WX501293 2018-07-04 16:06:27.0 
+ro.config.ringtone=Honor.ogg
+#  存量参数统一上线 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.ringtone2=Huawei_Tune_Living.ogg

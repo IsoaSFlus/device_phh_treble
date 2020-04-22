@@ -1,0 +1,44 @@
+#  DTS2016051907813 gaoguangping WX501293 2018-07-04 16:06:26.0 
+fw.max_users=1
+#  DTS2016051907813 gaoguangping WX501293 2018-07-04 16:06:26.0 
+fw.show_multiuserui=0
+#  DTS2016102600951 gaoguangping WX501293 2018-07-04 16:06:27.0 
+hw.lcd.density.scale=800
+#  存量参数统一上线 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.build.hw_emui_lite.enable=true
+#  DTS2017022209630 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.hw_emui_dbsearch_lite=true
+#  AR000AUDVO renzhanmin 00389500 2018-10-27 15:48:45.0 
+ro.config.hw_linkedin_enable=false
+#  DTS2016060606663 gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.hw_support_clone_app=false
+#  AR0009RQOB gaoguangping WX501293 2018-07-04 16:06:26.0 
+ro.config.support_sdcard_crypt=false
+#  AR000AVIJU sunjie WX491976 2018-10-27 15:48:45.0 
+ro.feature.animation.style=simple
+#  AR000AUDHD liuzhen 00349947 2018-10-27 15:48:45.0 
+ro.feature.calendar.map=false
+#  AR000AUDHE liuzhen 00349947 2018-10-27 15:48:45.0 
+ro.feature.calendar.permanentcalendar=false
+#  AR000ASJ09 renzhanmin 00389500 2018-10-27 15:48:45.0 
+ro.feature.contacts.favorite=false
+#  AR000AUDVN renzhanmin 00389500 2018-10-27 15:48:45.0 
+ro.feature.contacts.smartgroup=false
+#  AR000AUDJV zengzhi 00371290 2018-10-27 15:48:45.0 
+ro.feature.dfr.appeye=false
+#  AR000AUDJ0 zhouxiaomin 00355067 2018-10-27 15:48:45.0 
+ro.feature.email.ai_translation=false
+#  AR000AUDJ1 zhouxiaomin 00355067 2018-10-27 15:48:45.0 
+ro.feature.email.group=false
+#  AR000AUDIV zhouxiaomin 00355067 2018-10-27 15:48:45.0 
+ro.feature.email.smime=false
+#  DTS2018091810333 zhuxinwei 00350323 2018-10-27 15:48:45.0 
+ro.feature.intelligence.level=Lite
+#  AR000AUE7H gaoshuchao 00456536 2018-10-27 15:48:45.0 
+ro.feature.systemui.blur_wallpaper=false
+#  AR000ALDOA linhuabin WX547211 2018-10-27 15:48:45.0 
+ro.feature.wms.singlemode=false
+#  DTS2017032201966 gaoguangping WX501293 2018-07-04 16:06:27.0 
+ro.gallery.thumbnailLoading=true
+#  AR000A7JQ4 zhangshiyong 00434716 2018-08-08 14:28:03.0 
+ro.prop.hwkeychain_switch=false

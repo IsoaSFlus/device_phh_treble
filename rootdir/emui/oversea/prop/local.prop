@@ -1,0 +1,84 @@
+#  DTS2016090804666 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.cofig.onlinemusic.enabled=false
+#  AR000BL1A7 zhaojunjie 00373172 2018-12-10 10:18:53.0 
+ro.com.google.acsa=true
+#  0000 tongxiao 00220175 2018-06-14 18:50:20.0 
+ro.config.attach_apn_enabled=true
+#  DTS2018011809692 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.default_sms_app=com.google.android.apps.messaging
+#  DTS2018102310137 maozhijun 00452923 2018-10-29 20:33:44.0 
+ro.config.delay_setapn=true
+#  AR000AM0GR yaomin 00293341 2018-06-14 18:50:20.0 
+ro.config.hw_agps_adpt_sim=true
+#  AR000AQPEI meifan WX550601 2018-07-24 19:43:47.0 
+ro.config.hw_allow_rs_mms=true
+#  AR000AO6JK  gaoguangping WX501293 2018-06-28 11:47:11.0 
+ro.config.hw_always_allow_mms=0
+#  AR000AUGQJ chenzuchang 00404345 2018-07-11 18:30:28.0 
+ro.config.hw_custverdisplay=true
+#  AR00000 liuzhiting 00346026 2018-06-14 18:50:20.0 
+ro.config.hw_ecc_with_sim_card=true
+#  DTS2017041803335 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_globalEcc=true
+#  AR000AM08K zhanglifang WX474822 2018-06-25 10:20:29.0 
+ro.config.hw_hideSimIcon=false
+#  AR0005PK97 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_icon_supprot_cut=false
+#  AR000AQPED chenzuchang 00404345 2018-06-21 10:26:19.0 
+ro.config.hw_imei_sv_enable=true
+#  AR000AQPED chenzuchang 00404345 2018-06-21 10:26:19.0 
+ro.config.hw_imei_sv_show_two=true
+#  DTS2015091004462 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_multiscreen=false
+#  AR000AKPTQ fanzhen 00193867 2018-06-14 18:50:20.0 
+ro.config.hw_nfc_on=true
+#  DTS2018090710490  meifan WX550601 2018-10-27 15:48:45.0 
+ro.config.hw_omacp=1
+#  存量参数统一上线 gaoguangping WX501293 2018-07-09 16:56:37.0 
+ro.config.hw_optb=999
+#  AR000AM09K zhouxiaoping 00219144 2018-06-14 18:50:20.0 
+ro.config.hw_showSimName=true
+#  0000 yangliang 00354368 2018-06-14 18:50:20.0 
+ro.config.hw_show_mmiError=true
+#  AR0000 liuzhiting 00346026 2018-06-14 18:50:20.0 
+ro.config.hw_support_vm_ecc=true
+#  AR000A28A2 lijun 00425706 2018-07-18 09:16:53.0 
+ro.config.hw_updateCotaPara=true
+#  DTS2016051804693 gaoguangping WX501293 2018-07-09 16:57:07.0 
+ro.config.hw_use_browser_ua=http://wap1.huawei.com/uaprof/HUAWEI_%s_UAProfile.xml
+#  00000 liuzhiting 00346026 2018-06-14 18:50:20.0 
+ro.config.hw_voicemail_sim=true
+#  AR000AQPEE ouyangwentao WX343620 2018-06-21 16:35:42.0 
+ro.config.keyguard_unusedata=true
+#  AR000AQPEG menghaizhan 00349496 2018-06-22 14:31:13.0 
+ro.config.music_region=normal
+#  DTS2018060702805  sunqian WX505476 2018-06-14 18:50:20.0 
+ro.config.plmn_to_settings=true
+#  DTS2018090710490  meifan WX550601 2018-10-27 15:48:45.0 
+ro.config.show_always_mms_ui=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.show_epg_menu=false
+#  AR000AQPEE ouyangwentao WX343620 2018-06-21 16:35:53.0 
+ro.config.show_full_month=true
+#  0000 liuzhiting 00346026 2018-06-14 18:50:20.0 
+ro.config.show_vmail_number=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.spare_ntp_server=ntp.sjtu.edu.cn,time.windows.com,time.nist.gov,1.cn.pool.ntp.org
+#  AR000BGGGR zhangxiaoxian 00455719 2019-01-15 17:26:40.0 
+ro.config.support_iseapp=true
+#  AR0009GADV gaoguangping WX501293 2018-06-19 16:10:00.0 
+ro.config.support_privacyspace=true
+#  DTS2018061906793 yangliang 00354368 2018-06-21 15:44:48.0 
+ro.config.vm_prioritymode=2
+#  AR0009HVQR gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+#  00000 liuzhiting 00346026 2018-06-14 18:50:20.0 
+ro.odm.config.hw.imeisv=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.product.locale.language=en
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.product.locale.region=US
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.setupwizard.mode=OPTIONAL
+#  DTS2017080902546 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.setupwizard.wifi_on_exit=false

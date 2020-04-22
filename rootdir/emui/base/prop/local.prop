@@ -1,0 +1,116 @@
+#  AR0009432M gaoguangping WX501293 2018-06-14 18:50:20.0 
+bt.dpbap.enable=1
+#  AR0009432M gaoguangping WX501293 2018-06-14 18:50:20.0 
+bt.max.hfpclient.connections=2
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+dalvik.vm.stack-trace-file=/data/anr/traces.txt
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+fw.max_users=4
+#  存量参数统一上线 gaoguangping WX501293 2018-06-19 17:32:35.0 
+fw.show_multiuserui=1
+#  AR0009ASCP gaoguangping WX501293 2018-06-14 18:50:20.0 
+persist.bt.max.a2dp.connections=2
+#  AR00090AB2 gaoguangping WX501293 2018-06-14 18:50:20.0 
+persist.jank.gameskip=true
+#  DTS2017041208862 gaoguangping WX501293 2018-06-14 18:50:20.0 
+persist.radio.apm_sim_not_pwdn=1
+#  DTS2018040306482 mayuchi 00411171 2018-10-27 15:48:45.0 
+ro.build.hw_emui_api_level=18
+#  DTS2018090402237 zhouhuan WX501828 2018-10-27 15:48:45.0 
+ro.build.tags=release-keys
+#  DTS2018090402237 zhouhuan WX501828 2018-10-27 15:48:45.0 
+ro.build.user=test
+#  DTS2018081608400 zhouganglin WX517086 2018-10-27 15:48:45.0 
+ro.build.version.emui=EmotionUI_9.0.1
+#  DTS2017062607102 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.com.google.clientidbase=android-huawei
+#  AR000A6OAL youwenbin WX405429 2018-08-09 16:29:50.0 
+ro.config.alarm_alert=Forest_Melody.ogg
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.app_big_icon_size=192
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.attach_ip_type=IPV4V6
+#  AR00095393 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.auto_display_mode=true
+#  DTS2018040407988 biyan 00311353 2018-10-27 15:48:45.0 
+ro.config.demo_allow_pwd=false
+#  AR0009TUR4 mengdeyi 00280509 2018-06-28 15:37:32.0 
+ro.config.disable_reset_by_mdm=true
+#  DTS2016071504271 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.enable_iaware=true
+#  DTS2016092003327 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.enable_perfhub_fling=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.fp_navigation=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.huawei_smallwindow=0,0,1080,1346
+#  存量参数统一上线 gaoguangping WX501293 2018-06-19 17:32:53.0 
+ro.config.hw.security_volume=10
+#  AR00055E33 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_OptiDBConfig=true
+#  存量参数统一上线 gaoguangping WX501293 2018-07-09 16:57:07.0 
+ro.config.hw_allow_rs_mms=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_eapsim=true
+#  DTS2018102206956 yinhao 00425650 2018-10-27 15:48:45.0 
+ro.config.hw_easywakeup=false
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_eccNumUseRplmn=true
+#  DTS2017070608056 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_emcom=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_lte_release=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_multiscreen=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_power_saving=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_singlehand=1
+#  DTS2016060606663 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_support_clone_app=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_useCtrlSocket=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_vcardBase64=true
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_voicemail_sim=true
+#  AR0003N0CG gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_volte_dyn=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_watermark=false
+#  AR0009KEH4 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hwsync_enabled=true
+#  存量参数上线 sukun 00398675 2018-06-14 18:50:20.0 
+ro.config.hwtheme=1
+#  DTS2017091211790 gaoguangping WX501293 2018-07-09 16:56:37.0 
+ro.config.ipv4.mtu=1400
+#  存量参数统一上线 gaoguangping WX501293 2018-06-19 16:11:53.0 
+ro.config.notification_sound=Bongo.ogg
+#  存量参数上线 gaoguangping WX501293 2018-06-19 16:11:45.0 
+ro.config.ringtone=Huawei_Tune_Living.ogg
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.ringtone2=Huawei_Tune_Clean.ogg
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.switchPrimaryVolume=true
+#  存量参数统一上线 gaoguangping WX501293 2018-07-09 16:57:07.0 
+ro.config.updatelocation=true
+#  DTS2017042803190 gaoguangping WX501293 2018-06-19 16:11:38.0 
+ro.config.widevine_level3=true
+#  DTS2016092708075 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.control.sleeplog=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.huawei.cust.oma_drm=false
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.patch.baseline.version=2.0
+#  AR000A7JQ4 zhangshiyong 00434716 2018-08-08 14:28:03.0 
+ro.prop.hwkeychain_switch=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-19 16:11:31.0 
+ro.ril.ecclist=112,911,#911,*911
+#  AR000A4RIC zhaoxiaohu 00202435 2018-06-21 15:30:16.0 
+ro.syssvccallrecord.enable=true
+
+ro.config.hw_em_solution_ver=B025
+
+ro.comp.system_version=System 9.0.1.25(03CJ)
+
+ro.confg.hw_systemversion=System 9.0.1.25(03CJ)

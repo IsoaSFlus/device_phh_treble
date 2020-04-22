@@ -1,0 +1,54 @@
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.camera.sound.not_forced=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.enable_rms=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_aqv_enabled=true
+#  存量参数统一上线 sukun 00398675 2018-08-15 11:01:27.0 
+ro.config.hw_ecclist_nocard=+120,+122
+#  DTS2017041803335 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_ecclist_withcard=+112
+#  存量参数统一上线 gaoguangping WX501293 2018-07-11 11:52:36.0 
+ro.config.hw_fake_ecc_list=110,120,122,999,119
+#  DTS2017041803335 gaoguangping WX501293 2018-06-19 14:23:20.0 
+ro.config.hw_globalEcc=false
+#  DTS2017122704341 gaoguangping WX501293 2018-06-19 17:32:44.0 
+ro.config.hw_nlp=com.huawei.lbs
+#  存量参数统一上线 gaoguangping WX501293 2018-07-09 16:56:37.0 
+ro.config.hw_optb=156
+#  AR000909VO gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.hw_updateCotaPara=true
+#  AR0009FV1R gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.music_region=lowfreq
+#  DTS2018110107899 guningyi 00441126 2018-11-27 23:01:39.0 
+ro.config.permanent_error_heal=true
+#  AR000AAS1F  lijun 81003707 2018-07-10 17:00:39.0 
+ro.config.pre_dns_query=true
+#  AR0009KEIA gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.support_iseapp=true
+#  AR0009GADV gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.config.support_privacyspace=true
+#  AR000AT6PU liuheng 00308202 2018-07-25 20:50:30.0 
+ro.hw.ipv6opt=true
+#  DTS2018062608296 caoyukun WX427299 2018-07-05 20:48:26.0 
+ro.odm.cdma.dormancy.mode=1
+#  DTS2018062608296 caoyukun WX427299 2018-07-05 20:48:26.0 
+ro.odm.cdma.dormancy.screen=3
+#  DTS2018062608296 caoyukun WX427299 2018-07-05 20:48:26.0 
+ro.odm.gsm.fastdormancy.mode=3
+#  DTS2018062608296 caoyukun WX427299 2018-07-05 20:48:26.0 
+ro.odm.gsm.fd.screen=2
+#  DTS2018062608296 caoyukun WX427299 2018-07-05 20:48:26.0 
+ro.odm.gsm.fd.time_scroff=4000
+#  AR000AM27G lijun 81003707 2018-07-23 19:31:47.0 
+ro.odm.high_priority_data_mode=true
+#  存量参数统一上线 gaoguangping WX501293 2018-06-28 10:05:03.0 
+ro.product.locale=zh-Hans-CN
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.product.locale.language=zh
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.product.locale.region=CN
+#  存量参数上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.setupwizard.mode=DISABLED
+#  存量参数统一上线 gaoguangping WX501293 2018-06-14 18:50:20.0 
+ro.sys.ping_bf_dorecovery=true

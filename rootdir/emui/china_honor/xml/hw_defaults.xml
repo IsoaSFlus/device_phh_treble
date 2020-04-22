@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+  <!-- 存量参数统一上线 gaoguangping WX501293 2018-07-04 16:06:26.0 -->
+  <integer settings.system.androidBeam="0" reset="only_factory"/>
+</resources>
