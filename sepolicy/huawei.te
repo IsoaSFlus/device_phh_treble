@@ -6,6 +6,7 @@ type dmd_device, file_type;
 allow hal_fingerprint_server dmd_device:chr_file rw_file_perms;
 allow hal_fingerprint_server sysfs:file rw_file_perms;
 allow rild system_data_file:lnk_file read;
+allow init sysfs_devices_system_cpu:file write;
 
 type oeminfo_nvm, domain;
 type oeminfo_nvm_device, file_type;
