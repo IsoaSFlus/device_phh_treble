@@ -9,4 +9,5 @@ $(call inherit-product, external/pingfang-fonts/fonts.mk)
 
 PRODUCT_PACKAGES += \
 	init.victoria.rc \
+	force-stop.sh \
 	set_airplane_mode.sh
